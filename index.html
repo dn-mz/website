@@ -1,12 +1,107 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Daniel's site</title>
-</head>
-<body>
-  <h1>Daniel's Adventures</h1>
-  <p>Stay tuned.</p>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+    <title>Daniel</title>
+    <meta name="description" content="Exited founder, former BigLaw attorney, Schwarzman Scholar, and robotics builder." />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css">
+  </head>
+
+  <body>
+    <!-- Nav -->
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a href="/index.html" class="brand" aria-label="Home">Daniel 🦾</a>
+
+        <div class="nav-links" aria-label="Primary">
+          <a class="nav-link" href="/about.html">About</a>
+          <a class="nav-link" href="/blog.html">Blog</a>
+          <a class="nav-link" href="/book.html">Book a Time</a>
+        </div>
+
+        <div class="nav-cta">
+          <a class="btn secondary" href="/book.html">Book Now</a>
+        </div>
+
+        <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="container mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="/about.html">About</a>
+        <a href="/blog.html">Blog</a>
+        <a href="/book.html">Book a Time</a>
+        <a href="/book.html" class="btn ghost" style="margin-top:8px; width:fit-content;">Book Now</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container fade-up">
+        <h1>
+          Hello!
+        </h1>
+        <p class="lead">
+          I'm Daniel, a roboticist, lawyer and exited founder.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="projects">
+      <div class="container fade-up">
+        <div class="cta">
+          <h2>Let's Connect</h2>
+          <p>
+            Whether you're looking for coaching, exploring collaboration opportunities,
+            or simply want to connect, I'd love to hear from you.
+          </p>
+          <div class="cta-actions" id="contact">
+            <a class="btn inv" href="/book.html">
+              Book a Time <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn inv" href="/blog.html">
+              Read Blog
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">Daniel Ng © 2025</div>
+    </footer>
+
+    <script>
+      (function () {
+        const btn = document.getElementById("menuBtn");
+        const menu = document.getElementById("mobileMenu");
+        if (!btn || !menu) return;
+
+        btn.addEventListener("click", () => {
+          const open = menu.style.display === "block";
+          menu.style.display = open ? "none" : "block";
+          btn.setAttribute("aria-expanded", String(!open));
+          menu.setAttribute("aria-hidden", String(open));
+        });
+
+        // Close on link click (mobile)
+        menu.querySelectorAll("a").forEach((a) => {
+          a.addEventListener("click", () => {
+            menu.style.display = "none";
+            btn.setAttribute("aria-expanded", "false");
+            menu.setAttribute("aria-hidden", "true");
+          });
+        });
+      })();
+    </script>
+  </body>
 </html>

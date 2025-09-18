@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — Daniel Ventures</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="/index.html" class="brand" aria-label="Home">Daniel 🦾</a>
+
+      <div class="nav-links" aria-label="Primary">
+        <a class="nav-link" href="/about.html">About</a>
+        <a class="nav-link" href="/blog.html">Blog</a>
+        <a class="nav-link" href="/book.html">Book a Time</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="/book.html">Book Now</a>
+      </div>
+
+      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="container mobile-menu" id="mobileMenu" aria-hidden="true">
+      <a href="/about.html">About</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/book.html">Book a Time</a>
+      <a href="/book.html" class="btn ghost" style="margin-top:8px; width:fit-content;">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- Content --> 
+   <!-- Consider adding much more information / links!-->
+  <section class="section">
+    <div class="container fade-up">
+      <h1>About</h1>
+      <p class="lead">
+        I’m Daniel. I previously started, scaled and sold <a href="https://www.justship.sg"><b>JustShip</a></b>. 
+        I then spent time in BigLaw as a <b>private equity and venture capital lawyer</b>. 
+        I also serve as an <b>Operations Officer</b> in the Singapore Armed Forces.
+      </p>
+      
+      <p class="lead">
+        I'm on to my new adventure: <b>🤖 AI robotics 🦾</b>.
+      </p>
+      
+      <p class="lead">
+        I'm happy to chat about all things robots, law and more. I'm often approached to advise on careers, admissions, business strategy and legal matters. Feel free to book a time with me.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">Daniel Ng © 2025</div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", () => {
+        const open = menu.style.display === "block";
+        menu.style.display = open ? "none" : "block";
+        btn.setAttribute("aria-expanded", String(!open));
+        menu.setAttribute("aria-hidden", String(open));
+      });
+
+      menu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          menu.style.display = "none";
+          btn.setAttribute("aria-expanded", "false");
+          menu.setAttribute("aria-hidden", "true");
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
