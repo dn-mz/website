@@ -1,4 +1,9 @@
 <style>
+
+html {
+  overflow-y: scroll;
+}
+
       :root {
         --radius: 8px;
         --bg: oklch(99% 0 0);

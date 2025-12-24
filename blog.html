@@ -2,20 +2,22 @@
 layout: default
 title: Blog
 ---
-<div class="container section">
-  <header class="blog-header">
-    <h1>Blog</h1>
-    <p>Thoughts on robotics, law, and business.</p>
-  </header>
+<section class="section">
+  <div class="container">
+    <header class="blog-header">
+      <h1>Blog</h1>
+      <p>Thoughts on robotics, law, and business.</p>
+    </header>
 
-  <div class="blog-list">
-    {% for post in site.posts %}
-      <article class="blog-post">
-        <span class="stat-label">{{ post.date | date: "%b %d, %Y" }}</span>
-        <h2><a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a></h2>
-        <p>{{ post.description }}</p>
-      </article>
-      <hr style="border: 0; border-top: 1px solid var(--border); margin: 32px 0;">
-    {% endfor %}
+    <div class="blog-list">
+      {% for post in site.posts %}
+        <article class="blog-post">
+          <span class="stat-label">{{ post.date | date: "%b %d, %Y" }}</span>
+          <h2><a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a></h2>
+          <p>{{ post.description }}</p>
+        </article>
+        <hr style="border: 0; border-top: 1px solid var(--border); margin: 32px 0;">
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
