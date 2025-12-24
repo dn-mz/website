@@ -11,22 +11,20 @@
 <body>
     <nav class="nav">
         <div class="container nav-inner">
-          <a href="/index.html" class="brand" aria-label="Home">Daniel Ng 🦾</a>
-  
-          <div class="nav-links" aria-label="Primary">
-            <a class="nav-link" href="/about.html">About</a>
-            <a class="nav-link" href="/blog.html">Blog</a>
-            <a class="nav-link" href="/book.html">Contact</a>
-          </div>
-  
-  
-        <div class="container mobile-menu" id="mobileMenu" aria-hidden="true">
-          <a href="/about.html">About</a>
-          <a href="/blog">Blog</a>
-          <a href="/book.html">Book a Time</a>
-          <a href="/book.html" class="btn ghost" style="margin-top:8px; width:fit-content;">Book Now</a>
+            <a href="/" class="brand">Daniel Ng 🦾</a>
+            <div class="nav-links">
+                <a class="nav-link" href="/about.html">About</a>
+                <a class="nav-link" href="/blog/">Blog</a>
+                <a class="nav-link" href="/book.html">Contact</a>
+            </div>
+            </div> 
+    
+        <div class="container mobile-menu" id="mobileMenu" style="display:none;">
+            <a href="/about.html">About</a>
+            <a href="/blog/">Blog</a>
+            <a href="/book.html">Contact</a>
         </div>
-      </nav>
+    </nav>
 
   {{ content }}
 
@@ -50,3 +48,28 @@
   </footer>
 </body>
 </html>
+
+
+<script>
+    (function () {
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      if (!btn || !menu) return;
+  
+      btn.addEventListener("click", () => {
+        const open = menu.style.display === "block";
+        menu.style.display = open ? "none" : "block";
+        btn.setAttribute("aria-expanded", String(!open));
+        menu.setAttribute("aria-hidden", String(open));
+      });
+  
+      // Close on link click (mobile)
+      menu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          menu.style.display = "none";
+          btn.setAttribute("aria-expanded", "false");
+          menu.setAttribute("aria-hidden", "true");
+        });
+      });
+    })();
+  </script>
