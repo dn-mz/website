@@ -1,0 +1,6 @@
+title: Daniel Ng
+description: Entrepreneur, Lawyer, and Roboticist building in AI.
+url: "https://daniel.ventures"
+baseurl: ""
+
+permalink: /blog/:title/
