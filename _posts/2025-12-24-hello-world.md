@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Building my first Robot"
-date: 2025-12-24
-description: "A look into the hardware stack I'm using."
+title: "Hello world"
+date: 2025-09-17
+description: "Hello world."
 tags: [robotics, ai]
 image: /daniel-photo.jpg
 ---
 
-Testing testing
+Testing
