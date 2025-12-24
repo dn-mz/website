@@ -1,8 +1,8 @@
 <style>
 
-      html {
-        overflow-y: scroll;
-      }
+html {
+  overflow-y: scroll;
+}
 
       :root {
         --radius: 8px;
@@ -103,7 +103,7 @@
       /* Hero */
       .hero {
         min-height: calc(100svh - 64px);
-        display: grid; place-items: center; padding: 0;
+        display: grid; place-items: center; padding: 0 24px;
       }
       .hero h1 {
         font-size: clamp(32px, 6vw, 56px); line-height: 1.05; margin: 0 0 16px; font-weight: 800; letter-spacing: -0.04em;
@@ -329,33 +329,33 @@
 
 
         /* Desktop: Hide the button */
+      .menu-button {
+        display: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+
+      /* Mobile: Hide desktop links and show button */
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none; /* Hide the row of links */
+        }
+        
         .menu-button {
-          display: none;
-          background: none;
-          border: none;
-          cursor: pointer;
+          display: block; /* Show hamburger */
         }
 
-        /* Mobile: Hide desktop links and show button */
-        @media (max-width: 768px) {
-          .nav-links {
-            display: none; /* Hide the row of links */
-          }
-          
-          .menu-button {
-            display: block; /* Show hamburger */
-          }
-
-          .mobile-menu {
-            flex-direction: column;
-            padding: 20px 0;
-          }
-
-          .mobile-menu a {
-            display: block;
-            padding: 10px 0;
-            font-size: 1.2rem;
-          }
+        .mobile-menu {
+          flex-direction: column;
+          padding: 20px 0;
         }
+
+        .mobile-menu a {
+          display: block;
+          padding: 10px 0;
+          font-size: 1.2rem;
+        }
+      }
 
     </style>
