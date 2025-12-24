@@ -1,23 +1,24 @@
 ---
 layout: default
-title: Blog
+title: Reflections
 ---
 <section class="section">
-  <div class="container fade-up">
-    <header class="blog-header">
-      <h1>Blog</h1>
-      <p>Thoughts on robotics, law, and business.</p>
-    </header>
+  <div class="container">
+      <h1>Reflections</h1>
 
-    <div class="blog-list">
-      {% for post in site.posts %}
-        <article class="blog-post">
-          <span class="stat-label">{{ post.date | date: "%b %d, %Y" }}</span>
-          <h2><a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a></h2>
-          <p>{{ post.description }}</p>
-        </article>
-        <hr style="border: 0; border-top: 1px solid var(--border); margin: 32px 0;">
-      {% endfor %}
+      <div class="blog-list">
+        {% for post in site.posts %}
+          <article style="margin-bottom: 24px;">
+            <div style="font-size: 1.15rem;">
+              <a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a> 
+              <span style="color: var(--muted-fg); font-size: 0.9rem; margin-left: 8px;">({{ post.date | date: "%b %d, %Y" }})</span>
+            </div>
+            <p style="margin-top: 8px; color: var(--muted-fg); margin-bottom: 24px;">{{ post.description }}</p>
+            
+            <hr style="border: 0; border-top: 1px solid var(--border); margin: 0;">
+          </article>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </section>

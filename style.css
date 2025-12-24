@@ -1,7 +1,7 @@
 <style>
 
 html {
-  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
       :root {
@@ -110,7 +110,6 @@ html {
       }
       .hero .accent { color: var(--primary) }
       .lead {
-        color: var(--muted-fg);
         font-size: clamp(16px, 2.4vw, 20px);
         line-height: 1.6;
         max-width: 720px; margin: 0 auto 28px;

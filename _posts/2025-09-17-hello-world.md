@@ -2,7 +2,7 @@
 layout: post
 title: "Hello world"
 date: 2025-09-17
-description: "Hello world."
+description: "An introduction."
 tags: [robotics, ai]
 image: /daniel-photo.jpg
 ---

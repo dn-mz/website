@@ -2,12 +2,14 @@
 layout: default
 ---
 <article class="container section">
-  <header class="blog-header">
-    <p class="stat-label">{{ page.date | date: "%B %d, %Y" }}</p>
-    <h1>{{ page.title }}</h1>
+  <header style="margin-bottom: 2rem;">
+    <h1 style="margin-bottom: 0.5rem;">{{ page.title }}</h1>
+    <span style="color: var(--muted-fg);">{{ page.date | date: "%B %d, %Y" }}</span>
   </header>
   
-  <div class="details-content" style="border: none;">
+  <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 2rem;">
+
+  <div class="post-content" style="line-height: 1.8; font-size: 1.1rem;">
     {{ content }}
   </div>
 </article>
