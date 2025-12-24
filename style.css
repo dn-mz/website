@@ -198,4 +198,117 @@
             border-bottom: none; /* don’t show divider after the last post */
         }
 
+        
+        /* 1. Remove the default browser arrow */
+        details summary::-webkit-details-marker { display: none; }
+        details summary { list-style: none; cursor: pointer; }
+
+        /* 2. Style the details as a clear card */
+        details {
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          padding: 20px;
+          background: var(--card);
+          transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        /* 3. The Hover Effect - This is the "clue" for the user */
+        details:hover {
+          border-color: var(--primary); /* Uses your primary theme color */
+          transform: translateY(-2px);
+        }
+
+        /* 1. Remove default browser markers */
+        details summary::-webkit-details-marker { display: none; }
+        details summary { list-style: none; outline: none; cursor: pointer; }
+
+        /* 2. Card Styling */
+        details {
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          padding: 24px;
+          background: var(--card);
+          transition: all 0.2s ease-in-out;
+        }
+
+        details:hover {
+          border-color: var(--fg);
+          background: oklch(98% 0 0);
+        }
+
+        /* 3. Header and Icon Alignment */
+        details summary h3 {
+          margin: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 1.1rem;
+        }
+
+        /* The Plus/Minus Icon */
+        details summary::after {
+          content: "+";
+          font-size: 24px;
+          font-weight: 300;
+          color: var(--muted-fg);
+          transition: transform 0.3s ease;
+          line-height: 1;
+        }
+
+        details[open] summary::after {
+          content: "−"; /* Using a proper minus sign */
+        }
+
+        /* 4. Content styling */
+        .details-content {
+          margin-top: 16px;
+          padding-top: 16px;
+          border-top: 1px solid var(--border);
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+
+        /* Target custom-link anywhere, but keep it high priority */
+        a.custom-link {
+          color: oklch(50% 0.1 250) !important;
+          font-weight: 700;
+          transition: all 0.2s ease;
+          text-decoration: underline;
+          text-underline-offset: 4px;
+        }
+
+        a.custom-link:hover {
+          color: oklch(60% 0.05 250) !important;
+          text-decoration: none !important;
+        }
+
+        .social-links-circular {
+          display: flex;
+          justify-content: center;
+          gap: 16px;
+          margin-bottom: 24px;
+        }
+        
+        .social-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          border-radius: 50%; /* Makes it a perfect circle */
+          background-color: oklch(95% 0.01 250); /* Light off-white/grey background */
+          color: oklch(50% 0.1 250) !important
+          transition: all 0.2s ease;
+        }
+        
+        .social-icon:hover {
+          background-color: oklch(90% 0.02 250);
+          transform: translateY(-2px);
+          color: oklch(60% 0.05 250) !important
+        }
+        
+        .social-icon svg {
+          display: block;
+        }
+
     </style>
