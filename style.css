@@ -31,7 +31,7 @@ html {
       button { font: inherit }
 
       /* Utilities */
-      .container { max-width: 1100px; margin: 0 auto; padding: 0 24px }
+      .container { max-width: 1200px; margin: 0 auto; padding: 0 24px }
       .btn {
         display: inline-flex; align-items: center; justify-content: center;
         gap: 8px; padding: 12px 18px; border-radius: var(--radius);
@@ -169,14 +169,14 @@ html {
       }
 
       /* Responsive */
-      @media (min-width: 768px) {
+      @media (min-width: 800px) {
         .nav-links { display: flex }
         .nav-cta { display: block }
         .hamburger { display: none }
         .grid { grid-template-columns: repeat(2, 1fr) }
       }
-      @media (min-width: 1024px) {
-        .grid { grid-template-columns: repeat(3, 1fr) }
+      @media (min-width: 1200px) {
+        .grid { grid-template-columns: repeat(4, 1fr) }
       }
 
         /* Blog header */
@@ -255,8 +255,8 @@ html {
         details summary p {
           margin: 8px 0 0 0;
           color: var(--muted-fg);
-          font-size: clamp(16px, 2.4vw, 20px);
-          line-height: 1.6;
+          font-size: clamp(16px, 2vw, 19px);
+          line-height: 1.5;
         }
 
         /* The Plus/Minus Icon */
@@ -274,13 +274,13 @@ html {
           content: "−"; /* Using a proper minus sign */
         }
 
-        /* 4. Content styling */
+        /* 4. Content styling for cards*/
         .details-content {
           margin-top: 16px;
-          padding-top: 16px;
+          padding-top: 12px;
           border-top: 1px solid var(--border);
-          font-size: clamp(15px, 2.4vw, 19px);
-          line-height: 1.6;
+          font-size: clamp(14px, 2vw, 18px);
+          line-height: 1.4;
         }
 
         /* Target custom-link anywhere, but keep it high priority */
