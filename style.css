@@ -327,4 +327,35 @@ html {
           display: block;
         }
 
+
+        /* Desktop: Hide the button */
+        .menu-button {
+          display: none;
+          background: none;
+          border: none;
+          cursor: pointer;
+        }
+
+        /* Mobile: Hide desktop links and show button */
+        @media (max-width: 768px) {
+          .nav-links {
+            display: none; /* Hide the row of links */
+          }
+          
+          .menu-button {
+            display: block; /* Show hamburger */
+          }
+
+          .mobile-menu {
+            flex-direction: column;
+            padding: 20px 0;
+          }
+
+          .mobile-menu a {
+            display: block;
+            padding: 10px 0;
+            font-size: 1.2rem;
+          }
+        }
+
     </style>

@@ -12,12 +12,21 @@
     <nav class="nav">
         <div class="container nav-inner">
             <a href="/" class="brand">Daniel Ng 🦾</a>
+            
+            <button id="menuBtn" class="menu-button" aria-label="Toggle Menu">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+    
             <div class="nav-links">
                 <a class="nav-link" href="/about">About</a>
                 <a class="nav-link" href="/blog/">Blog</a>
                 <a class="nav-link" href="/book">Contact</a>
             </div>
-            </div> 
+        </div> 
     
         <div class="container mobile-menu" id="mobileMenu" style="display:none;">
             <a href="/about">About</a>
@@ -56,7 +65,7 @@
       <div class="copyright">Daniel Ng © 2026</div>
     </div>
   </footer>
-  
+
   <script>
     (function () {
       const btn = document.getElementById("menuBtn");
