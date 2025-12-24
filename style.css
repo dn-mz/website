@@ -235,20 +235,31 @@
           border-color: var(--fg);
           background: oklch(98% 0 0);
         }
-
         /* 3. Header and Icon Alignment */
         details summary h3 {
           margin: 0;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          font-size: 1.1rem;
+          /* Fixed the double "font-size" error here */
+          font-size: clamp(18px, 2.8vw, 22px); 
+          font-weight: 800;
+          letter-spacing: -0.02em;
+        }
+
+        /* This targets the "I build..." / "I advise..." text */
+        details summary p {
+          margin: 8px 0 0 0;
+          color: var(--muted-fg);
+          font-size: clamp(16px, 2.4vw, 20px);
+          line-height: 1.6;
         }
 
         /* The Plus/Minus Icon */
         details summary::after {
           content: "+";
-          font-size: 24px;
+          /* Match icon size to header size */
+          font-size: clamp(18px, 2.8vw, 22px);
           font-weight: 300;
           color: var(--muted-fg);
           transition: transform 0.3s ease;
@@ -264,7 +275,7 @@
           margin-top: 16px;
           padding-top: 16px;
           border-top: 1px solid var(--border);
-          font-size: 0.95rem;
+          font-size: clamp(15px, 2.4vw, 19px);
           line-height: 1.6;
         }
 
