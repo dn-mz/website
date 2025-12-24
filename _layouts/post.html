@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="container section">
+  <header class="blog-header">
+    <p class="stat-label">{{ page.date | date: "%B %d, %Y" }}</p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  
+  <div class="details-content" style="border: none;">
+    {{ content }}
+  </div>
+</article>

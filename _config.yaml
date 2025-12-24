@@ -1,0 +1,10 @@
+title: Daniel Ng
+description: Entrepreneur, Lawyer, and Roboticist building in AI.
+url: "https://daniel.ventures" # Change to your actual URL
+baseurl: ""
+
+# This creates clean, SEO-friendly URLs
+permalink: /blog/:title/
+
+# Tells Jekyll to look for these folders
+include: [style.css, posts, index.html, about.html, book.html, blog.html]
