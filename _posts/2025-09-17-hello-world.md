@@ -13,11 +13,11 @@ I can't quite remember when I wrote my first "hello world". Likely over 20 years
 
 I'm Daniel, and I've been building and learning in the AI robotics space since February 2025. I write about my reflections in robotics thus far [here](/blog/why-robotics){: .custom-link}.
 
-While I've done some programming over the years, I'm not formally trained as a computer scientist nor engineer. I read law at the National University of Singapore, politics at Yale-NUS College, and global affairs at Tsinghua University, Schwarzman College. 
+While I've done some programming over the years, I'm not formally trained as a computer scientist nor engineer. I read law at the National University of Singapore, politics at Yale-NUS College, and global affairs at Tsinghua University, Schwarzman College; and my work has been primarily in law and operations.
 
 __*A whistlestop tour*__
 
-As a child and teen, I spent a lot of time with computers and gaming (Warcraft III, DotA, Runescape, Maple Story, and many more). These games were not only my first foray into programming, they were also the space where I explored entrepreneurship - the first $1,000 I made was through buying and selling Maple Story mesos! 
+As a child and teen, I spent a lot of time with computers and gaming (Warcraft III, DotA, Runescape, Maple Story, and many more). These games were not only my first foray into programming, they were also the space where I explored entrepreneurship - the first $1,000 I made was through buying and selling Maple Story mesos as a fourteen year old.
 
 After I stopped gaming in my mid-teens, I developed interests in social justice, advocacy, leadership and law. Much credit to the Boys' Brigade and the incredible mentors for instilling a sense of other-centeredness in me. I soon entered the military (more about that [here](/blog/ICT-2){: .custom-link}). My interest in public law and international relations grew further, and I decided to pursue a double degree in [law and liberal arts](https://lawgazette.com.sg/news/updates/law-and-liberal-arts-education/){: .custom-link}. In university, I spent much time on public law and social justice. I was fortunate to work with incredible teams to systemically improve [military justice](https://www.straitstimes.com/singapore/seven-law-students-recognised-for-pro-bono-work-while-at-nus){: .custom-link}, [criminal law education](https://law.nus.edu.sg/media/criminal-justice-club-partners-npcc-to-train-cadets/){: .custom-link}, [pro-bono legal work](https://law.nus.edu.sg/media/nus-law-recognises-students-pro-bono-initiatives/){: .custom-link}, [youth empowerment](https://www.nus.edu.sg/newshub/news/2017/2017-12/2017-12-10/PLATFORM-st-10dec-pA13.pdf){: .custom-link}, and much more.  
 
