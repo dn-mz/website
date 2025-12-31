@@ -2,23 +2,71 @@
 layout: default
 title: Reflections
 ---
+
 <section class="section">
   <div class="container">
-      <h1>Reflections</h1>
+    <h1>Reflections</h1>
 
-      <div class="blog-list">
-        {% for post in site.posts %}
-          <article style="margin-bottom: 24px;">
-            <div style="font-size: 1.15rem;">
-              <a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a> 
-              <span style="color: var(--muted-fg); font-size: 0.9rem; margin-left: 8px;">({{ post.date | date: "%b %d, %Y" }})</span>
-            </div>
-            <p style="margin-top: 8px; color: var(--muted-fg); margin-bottom: 24px;">{{ post.description }}</p>
-            
-            <hr style="border: 0; border-top: 1px solid var(--border); margin: 0;">
-          </article>
+    <div id="tag-filter" style="margin-bottom: 32px; display: flex; flex-wrap: wrap; gap: 12px;">
+      <button class="tag-btn active" onclick="filterTags('all')" style="background: var(--fg); color: var(--bg); border: 1px solid var(--fg); padding: 4px 12px; cursor: pointer; border-radius: 4px; font-size: 14px;">All</button>
+      
+      {% comment %} 1. Collect all tags into an array {% endcomment %}
+      {% assign raw_tags = "" | split: "," %}
+      {% for post in site.posts %}
+        {% for tag in post.tags %}
+          {% assign raw_tags = raw_tags | push: tag %}
         {% endfor %}
-      </div>
+      {% endfor %}
+    
+      {% comment %} 2. Remove duplicates and sort alphabetically {% endcomment %}
+      {% assign sorted_tags = raw_tags | uniq | sort %}
+    
+      {% comment %} 3. Loop through the sorted tags to create buttons {% endcomment %}
+      {% for tag in sorted_tags %}
+        <button class="tag-btn" onclick="filterTags('{{ tag }}')" style="background: transparent; color: var(--muted-fg); border: 1px solid var(--border); padding: 4px 12px; cursor: pointer; border-radius: 4px; font-size: 14px;">{{ tag }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="blog-list">
+      {% for post in site.posts %}
+        <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" style="margin-bottom: 24px; border: none !important;">
+          <div style="font-size: 1.15rem;">
+            <a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a> 
+            <span style="color: var(--muted-fg); font-size: 0.9rem; margin-left: 8px;">({{ post.date | date: "%b %d, %Y" }})</span>
+          </div>
+          <p style="margin-top: 8px; color: var(--muted-fg); margin-bottom: 24px;">{{ post.description }}</p>
+          
+          <hr style="border: 0; border-top: 1px solid var(--border); margin: 0;">
+        </article>
+      {% endfor %}
     </div>
   </div>
 </section>
+
+<script>
+function filterTags(tag) {
+  const posts = document.querySelectorAll('.blog-post');
+  const buttons = document.querySelectorAll('.tag-btn');
+
+  // Update button styles
+  buttons.forEach(btn => {
+    if (btn.innerText.toLowerCase() === tag.toLowerCase()) {
+      btn.style.background = "var(--fg)";
+      btn.style.color = "var(--bg)";
+    } else {
+      btn.style.background = "transparent";
+      btn.style.color = "var(--muted-fg)";
+    }
+  });
+
+  // Filter posts
+  posts.forEach(post => {
+    const postTags = post.getAttribute('data-tags').split(',');
+    if (tag === 'all' || postTags.includes(tag)) {
+      post.style.display = 'block';
+    } else {
+      post.style.display = 'none';
+    }
+  });
+}
+</script>
