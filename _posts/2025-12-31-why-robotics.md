@@ -27,7 +27,7 @@ __*Learning robots*__
 
 Given my background, the question is: how am I supposed to learn robotics? Or, how did I learn robotics? I don’t have a degree in engineering (yet). I haven’t spent years mastering control systems or inverse kinematics (yet), and there is still much I don’t know about sensors (yet).
 
-I entered the field by tinkering with a friend. He built the tech stack for teleoperation and a VLA (Vision-Language-Action) policy; I focused on scaling data, quality control, hardware maintenance, and managing operations. This threw me head-first into the difficult of robotics - the tricky, unglamorous bits like USB cable management (especially with three cameras!), RAM latency, actuator calibration, and the complexities of leader-follower teleop set-ups.
+I entered the field by tinkering with a friend. He built the tech stack for teleoperation and a VLA (Vision-Language-Action) policy; I focused on scaling data, quality control, hardware maintenance, and managing operations. This threw me head-first into the challenge of robotics - the tricky, unglamorous bits like USB cable management (especially with three cameras!), RAM latency, actuator calibration, and the complexities of leader-follower teleop set-ups.
 
 Within two months, we had incredible results. We built a data collection engine with 30 operators that generated high-diversity datasets, deployed across multiple sites in the UK. Our models were performing at SOTA levels. I remember how excited we were when we saw our robots come to life, and improve with the regular iterations we had.
 
