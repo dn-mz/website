@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #f6f7f9;
+    color: #111;
+  }
+  
+  .container {
+    max-width: 520px;
+    margin: 40px auto;
+    padding: 0 16px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  
+  .subtitle {
+    color: #555;
+    margin-bottom: 24px;
+  }
+  
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  
+  .inline {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .results {
+    margin-top: 32px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .timeline-block {
+    background: #fff;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+  
+  .timeline-block.sleep {
+    border-left: 6px solid #6b8cff;
+  }
+  
+  .timeline-block.wake {
+    border-left: 6px solid #4caf50;
+  }
+  
+  .timeline-block.eat {
+    border-left: 6px solid #ff9800;
+  }
+  
+  .time {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .note {
+    color: #444;
+    font-size: 14px;
+  }
+  
