@@ -1,5 +1,14 @@
-# Ignore everything in this directory by default
-*
+# Ignore the local build folder
+dist/
+dist-ssr/
+*.local
 
-# But keep this .gitignore file itself
-!.gitignore
+# Ignore dependencies
+node_modules/
+
+# Ignore OS files
+.DS_Store
+thumbs.db
+
+# DO NOT ignore your source code! 
+# (Make sure src/, package.json, etc., are NOT in this list)
