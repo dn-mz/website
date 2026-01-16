@@ -4,3 +4,10 @@ url: "https://daniel.ventures"
 baseurl: ""
 
 permalink: /blog/:title/
+
+exclude:
+  - app-readyjetsetgo
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .github
