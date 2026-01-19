@@ -132,7 +132,7 @@ const App: React.FC = () => {
             <h1 className="text-xl font-bold text-slate-800 tracking-tight">Ready, Jet Set, Go</h1>
           </div>
           <div className="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full">
-            AI-Powered Travel Health
+            AI-Powered Travel Recommendations
           </div>
         </div>
       </header>
