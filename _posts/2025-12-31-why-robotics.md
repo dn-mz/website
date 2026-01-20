@@ -3,11 +3,11 @@ layout: post
 title: "Why robotics"
 date: 2025-12-31
 description: "Robots, learning robots, and robot learning."
-tags: [ai, business, operations, robotics]
+tags: [ai, robotics]
 image: /daniel-photo.jpg
 ---
 
-Putting aside my team's second-placing on day two of the 2003 National Junior Robotics Competition, I started looking closely at robotics after founding JustShip in 2020. At JustShip, we built a great tech-ops stack to streamline many operationally tedious processes for our customers, logistics partners and ourselves. Naturally, this involved looking at processes in the physical warehouse to automate with tech. Packing. Boxing. Retrieval. Sorting. Putting things in the right places. *Enter robotics.*
+Putting aside my team's second-placing on day two of the 2003 National Junior Robotics Competition, my first deep look into robotics was after founding JustShip in 2020. At JustShip, we built a great tech-ops stack to streamline many operationally tedious processes for our customers, logistics partners and ourselves. Naturally, this involved looking at processes in the physical warehouse to automate with tech. Packing. Boxing. Retrieval. Sorting. Putting things in the right places. *Enter robotics.*
 
 __*Robotics, then*__
 
