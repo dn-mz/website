@@ -2,7 +2,7 @@
 layout: post
 title: "Robots are taking our jobs!"
 date: 2026-01-20
-description: "Exploring some possibilities in response to a comment I receive."
+description: "Exploring some possibilities of a world with robots."
 tags: [ai, robotics]
 ---
 At almost every partner site I bring my robots to, I observe something similar. Workers on the factory floor look at our robots curiously and mumble to each other as we bring them in. Their eyes widen when we do a demonstration of our robots doing a simple everyday task they usually do. Sometimes if the demonstration does something that workers don't like to do, they applaud. If it's something that is squarely within their job scope, usually they look at each other nervously.
