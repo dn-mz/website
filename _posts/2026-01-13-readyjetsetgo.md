@@ -5,9 +5,6 @@ date: 2026-01-13
 description: "Jet lag, vibe coding - and reflections on AI wrappers, digital enmeshment and future industries."
 tags: [ai]
 ---
-![Vercel](/assets/images/vercel-just-ship.jpg)
-*Vercel - particularly like how they use "just ship"*
-
 I was back in Singapore for a work trip recently, advising on some M&A matters. Before I flew back to London, a friend who knew I experienced terrible jetlag on the way in asked, "Do you have a flight plan to reduce jetlag on your way back?"
 
 I mentioned a rough outline, then thought. Hmm, I'm sure AI would have more insight than me on this.
@@ -48,3 +45,6 @@ I don't plan to turn this into a massive startup. I’m simply going to use it a
 There is definitely space in the human performance industry, and I have friends in that space who are doing incredible work. For now, though, I’m grateful for the (vibe)code learnings, deeper reflections, and am happy to keep it as a useful tool that doesn't cost me $25 a trip.
 
 **DNMZ**
+
+![Vercel](/assets/images/vercel-just-ship.jpg)
+*Vercel - particularly like how they use "just ship"*
