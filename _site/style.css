@@ -357,4 +357,33 @@ html {
         }
       }
 
+
+/* Base style for all posts */
+.blog-post {
+  margin-bottom: 0px; /* Consistent spacing between posts */
+  border: none;
+}
+
+/* Featured Post - Black Accent */
+.featured-post {
+  border-left: 4px solid #000 !important; /* Changed blue to black */
+  background-color: rgba(0, 0, 0, 0.03); 
+  
+  /* Internal spacing */
+  padding: 16px 20px; 
+  
+  /* The negative margin-left pulls the border into the gutter 
+     so the titles stay perfectly aligned vertically */
+  margin-left: -20px; 
+  
+  /* Remove extra gap at the bottom */
+  margin-bottom: 0px !important; 
+  border-radius: 0 4px 4px 0;
+}
+
+/* This handles the gap between a featured post and whatever comes next */
+.featured-post + .blog-post {
+  margin-top: 24px;
+}
+
     </style>

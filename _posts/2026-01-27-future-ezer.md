@@ -2,6 +2,7 @@
 layout: post
 title: "Ezer Labs"
 date: 2026-01-27
+featured: true
 description: "and the world of robots."
 tags: [ai, robotics]
 ---

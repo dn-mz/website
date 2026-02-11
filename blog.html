@@ -29,7 +29,7 @@ title: Reflections
 
     <div class="blog-list">
       {% for post in site.posts %}
-        <article class="blog-post" data-tags="{{ post.tags | join: ',' }}" style="margin-bottom: 24px; border: none !important;">
+        <article class="blog-post {% if post.featured %}featured-post{% endif %}" data-tags="{{ post.tags | join: ',' }}">
           <div style="font-size: 1.15rem;">
             <a href="{{ post.url | relative_url }}" class="custom-link">{{ post.title }}</a> 
             <span style="color: var(--muted-fg); font-size: 0.9rem; margin-left: 8px;">({{ post.date | date: "%b %d, %Y" }})</span>
@@ -70,3 +70,4 @@ function filterTags(tag) {
   });
 }
 </script>
+

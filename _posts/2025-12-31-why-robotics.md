@@ -2,6 +2,7 @@
 layout: post
 title: "Why robotics"
 date: 2025-12-31
+featured: true
 description: "Robots, learning robots, and robot learning."
 tags: [ai, robotics]
 image: /daniel-photo.jpg

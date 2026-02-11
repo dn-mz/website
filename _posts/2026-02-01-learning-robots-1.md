@@ -5,7 +5,7 @@ date: 2026-02-01
 description: "A lay of the land."
 tags: [ai, robotics]
 ---
-I plan to write a little about what I learn about robots, papers I come across, or companies I know of that I think are doing cool things in the robot space. For this post, I'll simply outline the 10,000 foot view of what's happening in robotics.
+I started learning about robots in January 2025, and there is so much to learn! I plan to write a little about what I learn about robots, papers I come across, or companies I know of that I think are doing cool things in the robot space. For this post, I'll simply outline the 10,000 foot view of what's happening in robotics.
 
 _**A lay of the land**_
 
