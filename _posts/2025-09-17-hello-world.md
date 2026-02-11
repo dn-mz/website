@@ -2,8 +2,9 @@
 layout: post
 title: "Hello world 2.0"
 date: 2025-09-17
+featured: true
 description: "An introduction."
-tags: [ai, business, law, mentorship, military, operations, robotics]
+tags: [ai, business, geopolitics, law, mentorship, military, operations, robotics]
 image: /daniel-photo.jpg
 ---
 
