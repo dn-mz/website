@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+        <title>Daniel</title>
+        <meta name="description" content="Exited founder, former BigLaw attorney, Schwarzman Scholar, and robotics builder." />
+    
+        <link rel="stylesheet" href="/style.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8LEGE937H"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-M8LEGE937H');
+        </script>
+
+      </head>
+<body>
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="/" class="brand">Daniel Ng 🦾</a>
+            
+            <button id="menuBtn" class="menu-button" aria-label="Toggle Menu">
+              <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+    
+            <div class="nav-links">
+                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" href="/blog">Reflections</a>
+                <a class="nav-link" href="/book">Contact</a>
+                <a class="nav-link" href="https://ezer.work">Ezer</a>
+            </div>
+        </div> 
+    
+        <div class="container mobile-menu" id="mobileMenu" style="display:none;">
+            <a href="/about">About</a>
+            <a href="/blog">Reflections</a>
+            <a href="/book">Contact</a>
+            <a href="https://ezer.work">Ezer</a>
+        </div>
+    </nav>
+
+  <article class="container section">
+  <header style="margin-bottom: 2rem;">
+    <h1 style="margin-bottom: 0.5rem;">Ready, Jet Set, Go</h1>
+    <span style="color: var(--muted-fg);">January 13, 2026</span>
+  </header>
+  
+  <hr style="border: 0; border-top: 1px solid var(--border); margin-bottom: 2rem;">
+
+  <div class="post-content" style="line-height: 1.8; font-size: 1.1rem;">
+    <p>I was back in Singapore for a short trip recently, advising on a M&amp;A deal. Before I flew back to London, a friend who knew I experienced terrible jetlag on the way in asked, “Do you have a flight plan to reduce jetlag on your way back?”</p>
+
+<p>I mentioned a rough outline, then thought… Hmm, I’m no expert, I’m sure AI would have more insight than me on this.</p>
+
+<p>So I came back to London, and vibe coded a flight planner to mitigate jet lag. I know, there are already apps and full businesses doing this. But I’m not keen on paying $25 per trip to know when is best for me to sleep or what to eat (actually, it doesn’t even tell me what to eat). It was a good opportunity to refresh my (vibe-)coding skills and build a product I’d use.</p>
+
+<p>The result is <a href="https://readyjetsetgo.daniel.ventures" class="custom-link">Ready Jet Set Go</a>. I’ve logged my technical learnings in my learning journal; and here are my non-technical reflections from the day and a half I spent building.</p>
+
+<p><strong>1. The “AI Wrapper” is not enough</strong>
+Back in 2023, companies that were AI wrappers could raise tens of millions. Even hundreds. That’s increasingly less possible now, and simple AI wrappers are inceasingly saturated. If Ready Jet Set Go is just a chatbot where I have to manually type in my flight details, I might as well just use ChatGPT or Gemini. For a tool like this to be valuable, it must prioritize usability.</p>
+
+<p>So I designed Ready Jet Set Go to be fuss-free: key in a flight number, and the app retrieves the data for you. Click some parameters about yourself, and let the AI do the work. In a world of LLMs, the “moat” isn’t the AI model itself; it’s the UX, the correct data integration, perhaps community, and how effectively you solve a friction point without making the user work for it.</p>
+
+<p><strong>2. The Invisible Plumbing of Vibe Coding, and Digital Enmeshment</strong>
+“Vibe coding” feels incredibly easy, but relies on a massive amount of invisible plumbing. For example, to keep my Gemini API keys secure, I used Vercel’s Serverless Functions to build an API proxy. I also used Google for AI credits (explored OpenRouter, but the free models were not reliable enough especially on search). And considered flight APIs like AeroDataBox for flight information (eventually chose not to use it).</p>
+
+<p>And that’s the tricky thing about this modern workflow - the web of dependencies it creates. I recall trying to do most things inhouse in JustShip’s early days. We did, but after a while realised that using SaaS or building on top of SaaS is just much faster. This is even more true today. To move fast and <em>just ship</em>, SaaS is a massive amplifier. It creates incredibly useful abstractions that allows a single developer to build what used to require a whole team.</p>
+
+<p>On a philosophical level, this reminds me of enmeshment in International Relations constructivist theory. In IR, enmeshment suggests that deep interdependence leads to stability because interests become aligned. Perhaps the same is true for the web; our tools are more powerful because they are no longer “islands” but part of a shared architecture.</p>
+
+<p>Yet, there are risks. If one node fails, the integrity of the whole web is called into question. ASEAN is a prime example of enmeshment, yet the Cambodia-Thailand border conflicts casts doubt on ASEAN’s value. In the digital world, if the software we rely on fails or shifts its terms, what becomes of the apps we’ve built? We trade autonomy for speed, and in doing so, we become vulnerable to the (in)stability of the ecosystem at large.</p>
+
+<p>No easy answers here and, for what it’s worth, I use SaaS.</p>
+
+<p><strong>3. APIs and can we imagine the future?</strong>
+As alluded to above, I went for an AI search-based tool rather than a dedicated airline API subscription, mostly because Ready Jet Set Go is for fun, and I’m not looking to manage monthly overhead. However, going down the rabbit hole of airline data made me realise just how much information we track in the flight industry.</p>
+
+<p>It’s incredible.</p>
+
+<p>The early pioneers of flight would likely not have imagined the scale and magnitude of the flight industry we see today. Safety regulations, many different components and sub-industries, incredibly precise tracking and the very rich data involved (all for the price of $0-150/month for the API!).</p>
+
+<p>In a similar vein, I think the robotics industry of tomorrow will likely be just as unimaginable to us now. Definitely safety regulations, model safeguards. Maybe robot identities, relationship parameters, ID tracking… and just imagine how law might change!</p>
+
+<p>It’s exciting though also very daunting!</p>
+
+<p><strong>What’s next?</strong></p>
+
+<p>I don’t plan to turn Ready Jet Set Go into a startup. I’m simply going to use it as a guide for my own travels. That said, I can see possibilities of how this can expand (execution notwithstanding). Integrating recommendations for wellness products or physical supplies like compression socks and aromatherapy.</p>
+
+<p>There is definitely space in the human performance industry, and I have friends in that space who are doing incredible work. For now, though, I’m grateful for the (vibe)code lessons, deeper reflections, and am happy to keep it as a useful tool that doesn’t cost me $25 a trip.</p>
+
+<p>Back to robot learning.</p>
+
+<p><strong>DNMZ</strong></p>
+
+<p><img src="/assets/images/vercel-just-ship.jpg" alt="Vercel" />
+<em>Vercel - particularly like how they use “just ship”</em></p>
+
+  </div>
+</article>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links-circular">
+        <a href="mailto:danielngmz@gmail.com" class="social-icon" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/danielngmz/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+  
+        <a href="#" target="_blank" class="social-icon" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/></svg>
+        </a>
+      </div>
+      <div class="copyright">Daniel Ng © 2026</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      if (!btn || !menu) return;
+  
+      btn.addEventListener("click", () => {
+        const open = menu.style.display === "block";
+        menu.style.display = open ? "none" : "block";
+        btn.setAttribute("aria-expanded", String(!open));
+        menu.setAttribute("aria-hidden", String(open));
+      });
+  
+      // Close on link click (mobile)
+      menu.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          menu.style.display = "none";
+          btn.setAttribute("aria-expanded", "false");
+          menu.setAttribute("aria-hidden", "true");
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
+
+
