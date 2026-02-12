@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building."
+title: "Entrepreneurship"
 date: 2025-10-31
 description: "Lessons from JustShip"
 tags: [business]
