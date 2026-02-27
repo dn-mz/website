@@ -126,7 +126,7 @@ html {
 
       /* Highlights */
       .section-muted { background: color-mix(in oklch, var(--muted) 60%, transparent); }
-      .section { padding: 96px 0 }
+      .section { padding: 48px 0 }
       .section header { text-align: center; margin-bottom: 40px }
       .section h2 { font-size: clamp(24px, 4vw, 36px); margin: 0 0 12px; font-weight: 800; letter-spacing: -0.02em }
       .section p.section-lead { margin: 0 auto; max-width: 740px; color: var(--muted-fg); font-size: 18px }
