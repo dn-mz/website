@@ -11,7 +11,7 @@ In my time in legal practice, I realise there are broadly three coherent paths o
 
 1) **Partner track.** Money is great. As equity partner, 7 figures is not uncommon. You don't get a lot of time, though.
 
-Go deep in your chosen practice area, and master the technicals. Make sure you really understand the legal reasoning behind the work you are doing. Read the footnotes in the templates your firm has. Contribute actively, do presentations, and raise your hand for projects. Find an internal patron, and if you don't have one, move quickly and find an internal patron in the new firm. It helps to be loyal, but within limits (further analysis of considerations in [this post](/blog/on-law){: .custom-link}) Optimise for billables and whatever the firm tells you to optimise for - fortunately or unfortunately, that's how it works.
+Go deep in your chosen practice area, and master the technicals. Make sure you really understand the legal reasoning behind the work you are doing. Read the footnotes in the templates your firm has. Contribute actively, do presentations, and raise your hand for projects. Find an internal patron, and if you don't have one, move quickly and find an internal patron in the new firm. It helps to be loyal, but within limits (more on law firm considerations [here](/blog/on-law){: .custom-link}) Optimise for billables and whatever the firm tells you to optimise for - fortunately or unfortunately, that's how it works.
 
 2) **Go in-house.** Generally, you get more time. For money - it depends on practice area. Some in-house counsel can get paid comparable rates to lawyers in private practice.
 

@@ -19,7 +19,7 @@ Some highlights:
 - Learnt how solar power is produced, financed and sold, and considered what "sustainable" means from both an environmental and commercial perspective.
 - Seeing how much money there is to be made out of trash!
 
-I've also led board meetings (including being grilled on my recommendations), and watched advisers justify their analyses and synergy models. I saw what was tidy, messy, and questionable. It gave me what I wanted from legal practice: business acumen, a sharper judgment on risk, and exposure to how complex organisations function. It gave me this rare skill to build and scale companies in a way that has both velocity yet is risk-mitigated. 
+I've also led board meetings (including being grilled on my recommendations), and watched advisers justify their analyses and synergy models. I saw what was tidy, messy, and questionable. It gave me what I wanted from legal practice: business acumen, a sharper judgment on risk, and exposure to how complex organisations function. 
 
 If you are a lawyer (or adviser) doing due diligence, my only advice is to try to enjoy it. Don't just look for the change of control clause, or analyse term limits. Look behind the _why_ and understand the _how_ of the contract or organisational structure. That's when the fun begins.
 

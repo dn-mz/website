@@ -13,11 +13,11 @@ My starting premise is simple: robots will be adopted. I’ve seen the look on w
 
 **[Ezer](https://ezer.work){: .custom-link}'s goal is simple: robots adopted safely and affordably. Robots that small businesses can afford. Robots that workers can operate after hours of training. Robots that shift people into safer, more skilled roles.**
 
-Technology has always shifted labour. Most humans can scrub a shirt clean quite quickly. Most of us can wash dishes faster than a dishwasher. But I don't know many who would choose to wash clothes or dishes for many hours a day. 
+Most humans can scrub a shirt clean quite quickly, or wash dishes faster than a dishwasher. But I don't know many who would choose to wash clothes or dishes for many hours a day. Technology has always shifted labour.
 
 That said, the adoption of technology is not neutral. When the washing machine arrived, it replaced hours of manual labour. It didn’t eliminate households; it changed how time was spent.
 
-AI robots are more consequential than most technologies before them. As they interpret, discern and act in the physical world, the widespread adoption of robots will shape safety, labour, money and power. So we must be thoughtful about this.
+AI robots are more consequential than most technologies before them. As they interpret, discern and act in the physical world, the widespread adoption of robots will shape safety, labour, money and power. We must design robots with humans in mind.
 
 Ezer deploys modular robots into businesses including small businesses folding laundry in London and handling insects in Ely. We start with teleoperation and gradually build autonomy. Throughout this process, humans stay in the loop, and robots learn in the real world, not in the lab. Where research labs focus on compute and models, hardware companies focus on building cool robots, Ezer focuses on real world and real work.
 

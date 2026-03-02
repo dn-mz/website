@@ -18,7 +18,7 @@ I think about my experiences at JustShip, and the ups and downs. I'm grateful fo
 
 2) **Data.** Collect as much of it as possible, even things you don't yet analyse. Then, mindfully analyse.
 
-What gets measured gets done. It's be a bit of a double edged sword. But before you even talk about KPIs... collect data. That said, be mindful as too much data can be noise, so it's important to be discerning about what you analyse. Just collect the data, first. It'll come in handy.
+What gets measured gets done. It's a bit of a double edged sword, and it's important to be discerning about what you measure and analyse. But in any event: collect data first. It'll come in handy. Then build out the right KPIs and things to measure.
 
 And it did for JustShip. Pricing, sales and costs predictions, informed marketing and SEO, how we simplify categories of items, and more. I tracked every expense rigorously, and I'd recommend that for anyone.
 
