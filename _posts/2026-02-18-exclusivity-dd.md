@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time for due diligence.
+title: Time for due diligence
 date: 2026-02-18
 description: "Why I enjoy due diligence; and how it builds my business acumen."
 tags: [law]
