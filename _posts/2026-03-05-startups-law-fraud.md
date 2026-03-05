@@ -21,6 +21,6 @@ There's something worth naming here. We celebrate the hustle and "fake it till y
 
 Perhaps honesty is boring and doesn't make for good headlines. I saw how that compounds in team trust, strong customer relationships, and solid foundations for a healthy, profitable and growing company at JustShip. I saw that with Servo too. Unfortunately, that doesn't optimise for the VC game.
 
-There's a word for "fake it till you make it", when one doesn't make it. We, and especially VCs, don't like saying it out loud. 
+There's a word for "fake it till you make it". We, and especially VCs, don't like saying it out loud. 
 
 **DNMZ**
