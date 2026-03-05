@@ -3,7 +3,7 @@ layout: post
 title: "Hustle, failure, fraud"
 date: 2026-03-05
 description: "Another day, another start-up fraud."
-tags: [business, law]
+tags: [business]
 ---
 Could be my algorithm but I keep seeing start-up fraud in the news. Today it's [CasStle](https://www.reuters.com/legal/government/founder-clothing-tech-startup-caastle-pleads-guilty-300-million-fraud-case-2026-03-04/){: .custom-link}; interestingly, by a senior executive in the fashion industry. A few weeks ago, [Kalder](https://www.telegraph.co.uk/business/2026/02/03/tech-30-under-30-star-faces-52-years-in-prison-for-fraud/){: .custom-link}, [ComplYant](https://www.onlycfo.io/p/sec-charges-vc-backed-company-with){: .custom-link}. The bigger names, [Frank](https://www.bbc.co.uk/news/articles/c4gwj15djdxo){: .custom-link}, [Theranos](https://www.justice.gov/usao-ndca/pr/elizabeth-holmes-sentenced-more-11-years-defrauding-theranos-investors-hundreds){: .custom-link}, and [FTX](https://www.justice.gov/archives/opa/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes){: .custom-link}. And of course, [WeWork](https://www.profit-led-growth.com/content-hub/wework-the-47b-fraud){: .custom-link}, not fraud apparently, just "fake it till you make it" storytelling at scale.
 

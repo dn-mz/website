@@ -2,7 +2,7 @@
 layout: post
 title: "Choose your adventure: lawyer edition"
 date: 2026-03-01
-description: "Three (plus) paths for junior lawyers to think about."
+description: "Three paths for junior lawyers to think about."
 tags: [law, mentorship]
 ---
 _It's the time of the year where there's a new batch of trainees/lawyers! (March and September)_
