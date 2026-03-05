@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Time for due diligence
+title: So it begins (due diligence)
 date: 2026-02-18
 description: "Why I enjoy due diligence; and how it builds my business acumen."
 tags: [law]
 ---
-*"Great way to start the year of the Fire Horse!" (iykyk)*
+*I'm working on a M&A deal now, and due diligence has just started. "Great way to start the year of the Fire Horse!" (iykyk)*
 
 I enjoy due diligence.
 
