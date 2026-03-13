@@ -1,4 +1,5 @@
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Geist+Mono:wght@100..900&display=swap');
 
 html {
   scrollbar-gutter: stable;
@@ -58,19 +59,56 @@ html {
         border-radius: calc(var(--radius) + 2px);
         background: var(--card);
       }
+      /* 1. Improved Entrance Physics */
+@keyframes fluidFadeUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(24px) scale(0.98); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
 
-      /* Animations */
-      @keyframes fadeUp {
-        from { opacity: 0; transform: translateY(16px) }
-        to { opacity: 1; transform: translateY(0) }
-      }
-      .fade-up { animation: fadeUp .6s ease both }
-      .fade-up-del-1 { animation-delay: .1s }
-      .fade-up-del-2 { animation-delay: .2s }
-      .fade-up-del-3 { animation-delay: .3s }
-      .fade-up-del-4 { animation-delay: .4s }
-      .fade-up-del-5 { animation-delay: .5s }
-      .fade-up-del-6 { animation-delay: .6s }
+.animate-in {
+  animation: fluidFadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+/* 2. Interactive Card Lift */
+.card, details, .highlight {
+  transition: 
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.3s ease;
+}
+
+.card:hover, details:hover, .highlight:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.1);
+  border-color: var(--fg);
+}
+
+/* 3. Smooth Navigation Link Underlines */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--fg);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
 
       /* Navbar */
       .nav {
@@ -384,6 +422,62 @@ html {
 /* This handles the gap between a featured post and whatever comes next */
 .featured-post + .blog-post {
   margin-top: 24px;
+}
+
+/* Now Page Layout */
+.now-container {
+  max-width: 550px;
+  margin: 40px auto;
+}
+
+.now-header {
+  margin-bottom: 64px;
+}
+
+.now-header h1 {
+  font-size: clamp(3rem, 8vw, 4rem);
+  margin-bottom: 8px;
+}
+
+.now-timestamp {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--muted-fg);
+}
+
+.now-thread {
+  border-left: 1px solid var(--border);
+  padding-left: 24px;
+  margin-left: 4px;
+}
+
+.now-section {
+  margin-bottom: 40px;
+}
+
+.now-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--muted-fg);
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.now-content {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.now-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.now-list li {
+  margin-bottom: 8px;
 }
 
     </style>

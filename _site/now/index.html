@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+        <title>Daniel</title>
+        <meta name="description" content="Exited founder, former BigLaw attorney, Schwarzman Scholar, and robotics builder." />
+    
+        <link rel="stylesheet" href="/style.css">
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8LEGE937H"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-M8LEGE937H');
+        </script>
+
+        <style>
+          /* Always show right nav, hide hamburger everywhere */
+          .nav-links { display: flex !important; gap: 16px; align-items: center; }
+          .menu-button { display: none !important; }
+
+          @media (max-width: 480px) {
+            .nav-links { gap: 8px; }
+            .nav-link { font-size: 12px; }
+            .brand-text { font-size: 15px; }
+          }
+
+          /* Brand wrapper */
+          .brand-wrapper {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+          }
+
+          /* Brand text — links to home */
+          .brand-text {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            font-size: 18px;
+            color: inherit;
+            text-decoration: none;
+            transition: opacity 0.15s ease;
+          }
+
+          .brand-text:hover {
+            opacity: 0.65;
+          }
+
+          /* Chevron button — toggles dropdown */
+          .brand-chevron-btn {
+            background: var(--muted);
+            border: none;
+            padding: 3px 3px 0;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+            border-radius: 4px;
+            transition: background 0.15s ease;
+            line-height: 1;
+          }
+
+          .brand-chevron-btn:hover {
+            background: var(--border);
+          }
+
+          .brand-chevron {
+            width: 21px;
+            height: 21px;
+            transition: transform 0.2s ease;
+            opacity: 0.7;
+            display: block;
+          }
+
+          .brand-wrapper.open .brand-chevron {
+            transform: rotate(180deg);
+            opacity: 0.85;
+          }
+
+          /* Dropdown */
+          .brand-dropdown {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 0;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            min-width: 140px;
+            box-shadow: 0 8px 24px oklch(0% 0 0 / 0.08);
+            overflow: hidden;
+            z-index: 100;
+            animation: fadeUp 0.15s ease both;
+          }
+
+          .brand-wrapper.open .brand-dropdown {
+            display: block;
+          }
+
+          .brand-dropdown a {
+            display: block;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            color: oklch(45% 0 0);
+            transition: background 0.15s ease, color 0.15s ease;
+            border-bottom: 1px solid var(--border);
+          }
+
+          .brand-dropdown a:last-child {
+            border-bottom: none;
+          }
+
+          .brand-dropdown a:hover {
+            background: var(--muted);
+            color: var(--fg);
+          }
+        </style>
+
+      </head>
+<body>
+    <nav class="nav">
+        <div class="container nav-inner">
+
+            <!-- Brand: text links home, chevron toggles dropdown -->
+            <div class="brand-wrapper" id="brandWrapper">
+              <a class="brand-text" href="/">🦾 Daniel Ng</a>
+              <button class="brand-chevron-btn" id="brandBtn" aria-haspopup="true" aria-expanded="false" aria-label="Navigation menu">
+                <svg class="brand-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="brand-dropdown" id="brandDropdown" role="menu">
+                <a href="/about" role="menuitem">About</a>
+                <a href="/blog" role="menuitem">Blog</a>
+                <a href="/book" role="menuitem">Contact</a>
+              </div>
+            </div>
+
+            <!-- Right nav — add Angel / WWYDW100 here when ready -->
+            <div class="nav-links">
+                <a class="nav-link" href="https://ezer.work">Ezer</a>
+            </div>
+        </div> 
+    </nav>
+
+  <section class="section animate-in">
+  <div class="container now-container"> 
+    
+    <header class="now-header">
+      <h1>Now</h1>
+      <p class="now-timestamp">
+        Last updated: 05 March 2026 (London, UK 🇬🇧)
+      </p>
+    </header>
+
+    <div class="now-thread now-content">
+      
+      <div class="now-section">
+        <p>📍 Between <strong>London</strong> and <strong>Singapore</strong>.</p>
+      </div>
+
+      <div class="now-section">
+        <span class="now-label">What I'm working on</span>
+        <p>⚖️ Executing on a  strategic M&A deal for a company I've worked with for many years - very exciting.</p>
+        <p>🤖 Robot companies frequently reach out to me on all sorts of advice. Everything from tech development, fundraising, deployment, growth and operations.</p>
+      </div>
+
+      <div class="now-section">
+        <span class="now-label">What I'm learning</span>
+        <ul class="now-list">
+          <li>🦾 Robotics. Recently built a mobile base, reading and keeping up to date with developments in the space. Considering YOR and other robots to build and code.</li>
+          <li>✨ Getting deep into AI, agents, reinforcement learning and more. </li>
+          <li>📚 I spent more than a year building robots, learning the complexities of hardware, software and AI models, and developed a strong robot intuition. I'm now looking to go back to the first principles and fundamentals of computer science and AI - starting with Data Structures & Algorithms on Coursera.</li>
+        </ul>
+      </div>
+
+      <div class="now-section">
+        <span class="now-label">What I'm enjoying</span>
+        <p>Deep ☕ conversations with curious minds, quality time with Joanna ❤️, and volunteering at 🏫 <a href="https://freeenglishclasses.org/" class="custom-link">Free English Classes</a>.</p>
+      </div>
+
+      <footer class="footer" style="border-top: 1px solid var(--border); text-align: left; padding-top: 24px;">
+        This is a <a href="https://nownownow.com" class="custom-link">Now page</a>.
+      </footer>
+  
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links-circular">
+        <a href="mailto:danielngmz@gmail.com" class="social-icon" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/danielngmz/" target="_blank" class="social-icon" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+  
+        <a href="#" target="_blank" class="social-icon" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M20 4l-6.768 6.768"/></svg>
+        </a>
+      </div>
+      <div class="copyright">Daniel Ng © 2026</div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const wrapper = document.getElementById("brandWrapper");
+      const btn = document.getElementById("brandBtn");
+      if (!wrapper || !btn) return;
+
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isOpen = wrapper.classList.contains("open");
+        wrapper.classList.toggle("open", !isOpen);
+        btn.setAttribute("aria-expanded", String(!isOpen));
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!wrapper.contains(e.target)) {
+          wrapper.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          wrapper.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
