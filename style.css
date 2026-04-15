@@ -16,12 +16,14 @@ html {
         --primary-fg: oklch(98% 0 0);
         --border: oklch(90% 0 0);
         --ring: oklch(25% 0 0);
+        --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+        --font-mono: "Geist Mono", monospace;
       }
       * { box-sizing: border-box }
       html { scroll-behavior: smooth }
       body {
         margin: 0;
-        font-family: font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+        font-family: var(--font-sans);
         background: var(--bg);
         color: var(--fg);
         -webkit-font-smoothing: antialiased;
@@ -110,26 +112,56 @@ html {
   width: 100%;
 }
 
-      /* Navbar */
-      .nav {
-        position: sticky; top: 0; z-index: 50;
-        backdrop-filter: blur(10px);
-        background: color-mix(in oklch, var(--bg) 85%, transparent);
-        border-bottom: 1px solid var(--border);
-      }
-      .nav-inner {
-        height: 64px; display: flex; align-items: center; justify-content: space-between;
-      }
-      .brand { font-weight: 800; letter-spacing: -0.02em; font-size: 18px }
-      .nav-links { display: none; gap: 24px; align-items: center }
-      .nav-link {
-        font-size: 14px; font-weight: 600; color: oklch(45% 0 0);
-      }
-      .nav-link:hover { color: var(--fg) }
-      .nav-cta { display: none }
-      .hamburger {
-        border: none; background: transparent; padding: 8px; border-radius: 8px; cursor: pointer;
-      }
+/* Navbar */
+.nav-bar {
+  padding: 1.5rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: var(--font-sans); /* Forces Inter */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link, .dropdown-trigger, .dropdown-item {
+  font-family: var(--font-sans) !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: oklch(45% 0 0);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .dropdown-trigger:hover, .dropdown-item:hover {
+  color: var(--fg);
+}
+
+/* Dropdown specific styling to make it look rapi (tidy) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 100;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 8px 0;
+  margin-top: 8px;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}      
 
       /* Mobile menu */
       .mobile-menu {
@@ -478,6 +510,75 @@ html {
 
 .now-list li {
   margin-bottom: 8px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 10;
+  background: var(--bg);
+  transition: var(--transition-spring);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.nav-container {
+  display: grid;
+  /* Creates three columns: left and right take only the space they need, center takes the rest */
+  grid-template-columns: auto 1fr auto; 
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-center {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem; /* Space between About, Now, and Blog */
+}
+
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Specific fix for the Projects button to remove default padding/height */
+.dropdown-trigger {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-bar {
+  padding: 1.5rem 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  transition: var(--transition-spring);
 }
 
     </style>

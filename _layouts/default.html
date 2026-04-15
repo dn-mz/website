@@ -123,30 +123,31 @@
 
       </head>
 <body>
-    <nav class="nav">
-        <div class="container nav-inner">
+<nav class="nav-bar">
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="/" class="nav-link">Daniel 🦾</a>
+    </div>
 
-            <!-- Brand: text links home, chevron toggles dropdown -->
-            <div class="brand-wrapper" id="brandWrapper">
-              <a class="brand-text" href="/">🦾 Daniel Ng</a>
-              <button class="brand-chevron-btn" id="brandBtn" aria-haspopup="true" aria-expanded="false" aria-label="Navigation menu">
-                <svg class="brand-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </button>
-              <div class="brand-dropdown" id="brandDropdown" role="menu">
-                <a href="/about" role="menuitem">About</a>
-                <a href="/blog" role="menuitem">Blog</a>
-                <a href="/book" role="menuitem">Contact</a>
-              </div>
-            </div>
+    <div class="nav-center">
+      <a href="/about" class="nav-link">About</a>
+      <a href="/now" class="nav-link">Now</a>
+      <a href="/blog" class="nav-link">Blog</a>
+    </div>
 
-            <!-- Right nav — add Angel / WWYDW100 here when ready -->
-            <div class="nav-links">
-                <a class="nav-link" href="https://ezer.work">Ezer</a>
-            </div>
-        </div> 
-    </nav>
+    <div class="nav-right">
+      <div class="dropdown">
+        <button class="dropdown-trigger" style="background:none; border:none; cursor:pointer;">Projects ▾</button>
+        <div class="dropdown-content">
+          <a href="/ezer" class="dropdown-item">Ezer</a>
+          <a href="/wwydw100" class="dropdown-item">WWYDW100</a>
+          <a href="/investing" class="dropdown-item">Angel Investing</a>
+        </div>
+      </div>
+      <a href="/contact" class="nav-link">Contact</a>
+    </div>
+  </div>
+</nav>
 
   {{ content }}
 
