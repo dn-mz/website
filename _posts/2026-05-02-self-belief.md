@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Self belief / self delusion - a necessary trait of an entrepreneur?"
-date: 2026-04-02
+date: 2026-05-02
 description: "Reflections after visiting a lab."
 tags: [ai, business, robotics]
 ---
