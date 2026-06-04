@@ -22,6 +22,6 @@ I've seen too much of companies optimising heavily for signals and momentum. It 
 
 I'm now trying to find that balance. The best companies have both: strong fundamentals and the ability to communnicate vision clearly. 
 
-If I could pick, I'd rather build durable systems rather than optimise for signals. Might be a slower, more principled approach. Hopefully I'm right that over a sufficiently long timeline, substance > signals.
+If I could pick, I'd rather build durable systems rather than optimise for signals. Might be a slower, more principled approach. Hopefully I'm right that over a sufficiently long timeline, substance > signals. Though in any case: substance + signals > substance > signals.
 
 DNMZ
