@@ -2,6 +2,7 @@
 layout: post
 title: "Why teleop?"
 date: 2026-09-01
+featured: true
 description: "Why I bet on teleoperation, and why I think the way for robots to learn better is to put them to work."
 tags: [ai, robotics]
 ---
