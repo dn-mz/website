@@ -29,6 +29,8 @@ But that's exactly the point. The only way to learn how to put robots to work is
 
 Teleop is not a substitute for autonomy. It's how we get there, while getting paid along the way. At Servo, building foundation models, I learned that autonomous policies weren't yet reliable enough to meet what customers need. So as policies improve, we plug them in and move from teleoperation to telesupervision, with an operator stepping in when the robot needs help. Autonomy is earned, and learned, on the job - when robots are put to work.
 
+Other thoughts: [why robotics](/_posts/2025-12-31-why-robotics.md), [labour replacement](/_posts/2026-01-20-robots-replacing-workers.md), [deployment-first robots](/_posts/2026-01-27-deployment-first-robotics.md){: .custom-link}.
+
 ![Insect Farm](/assets/images/crickets.gif)
 
 *Teleoperating in an insect farm. I think insect farms are a great use case for robots.*
