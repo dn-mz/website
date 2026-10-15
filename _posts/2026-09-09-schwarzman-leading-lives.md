@@ -13,5 +13,7 @@ Had an incredible time faciliating Schwarzman Leading Lives for C11.
 Visited a few robot companies thereafter. Always great to see robots in action. Many thoughts there - to come.
 
 ![Dex Teleop](/assets/images/dexteleop.jpg)
+
 ![Rokae](/assets/images/rokae.jpg)
+
 ![Realman](/assets/images/realman.jpg)
