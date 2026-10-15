@@ -11,7 +11,7 @@ Could be my algorithm but I keep seeing start-up fraud in the news. Today it's [
 
 I'm disheartened, unsurprised, yet disheartened to be unsurprised.
 
-My co-founder and I did our rounds in US, Europe and Asia. We built and deployed robots, surpassed benchmarks, and wanted to continue building robots for the real world. Raised $8M, and ultimately turned it down. We burnt out. 
+My previous co-founder and I did our rounds in US, Europe and Asia. We built and deployed robots, surpassed benchmarks, and wanted to continue building robots for the real world. Raised $8M, and ultimately turned it down. We burnt out. 
 
 What we saw was hype-chasing, aura farming, fomo and a world where companies are built on cards. VC incentives misaligned, confused, and reward the wrong behaviour (there are of course exceptions and I've met some great VCs). It's not the game we wanted to play; we wanted to build.
 

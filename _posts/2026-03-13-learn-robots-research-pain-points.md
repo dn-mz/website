@@ -24,7 +24,7 @@ Here are their results:
 9. Long-horizon and memory (6/64) - Most policies are weak on long sequences and memory-dependent decision making.
 10. RL scaling and offline-to-online (6/64) - Exploration, data efficiency, and pushing reliability toward deployment-grade performance remain open.
 
-One thing obviously missing is deployments, but that's not surprising as conversations focus more on research work. And that's the stuff I like to do. Haptics Labs does mention that, saying this list focuses on research and not deployments, and points to a piece by A16Z on [deployment gaps](https://www.a16z.news/p/the-physical-ai-deployment-gap){: .custom-link}. Fair point, though one of the big learning points I have from Servo/Ezer is that the research/deployment gap is one that necessarily needs to be crossed, and deployment will lead to much, much better research. 
+One thing obviously missing is deployments, but that's not surprising as conversations focus more on research work. And that's the stuff I like to do. Haptics Labs does mention that, saying this list focuses on research and not deployments, and points to a piece by A16Z on [deployment gaps](https://www.a16z.news/p/the-physical-ai-deployment-gap){: .custom-link}. Fair point, though one of the big learning points I have from Servo is that the research/deployment gap is one that necessarily needs to be crossed, and deployment will lead to much, much better research. 
 
 Overall, a great analysis to map out pain points in the industry.
 
